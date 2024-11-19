@@ -1,0 +1,124 @@
+/* Ayuda.css */
+
+/* General background and text color */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Evita el desbordamiento horizontal */
+}
+
+/* Main container to ensure margin from the top */
+.main-container {
+    padding-top: 50px;  /* Añadido margen superior para separar el contenido de la parte superior */
+}
+
+/* Container for the help page */
+.container {
+    padding: 10px;
+    max-width: 1200px;  /* Ajustado para pantallas de 1280px de ancho */
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* Titles */
+h1 {
+    color: #ff4500;
+    text-align: center;
+    font-size: 24px;  /* Ajustado para pantallas más pequeñas */
+    margin: 20px 0 10px;  /* Añadido margen superior */
+}
+
+h2 {
+    color: #ff4500;
+    text-align: center;
+    font-size: 20px;  /* Ajustado para pantallas más pequeñas */
+    margin-top: 10px;
+}
+
+/* FAQ section */
+.faq-section {
+    margin-bottom: 20px;
+}
+
+.faq h3 {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.faq p {
+    font-size: 14px;
+    color: #b5b5b5;
+    margin: 5px 0;
+}
+
+/* Contact section */
+.contact-section {
+    margin-bottom: 20px;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-section label {
+    color: #ffffff;
+}
+
+.contact-section input, .contact-section textarea {
+    padding: 8px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    background-color: #1f1f1f;
+    color: #ffffff;
+}
+
+.contact-section button {
+    padding: 8px 16px;
+    background-color: #ff4500;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-section button:hover {
+    background-color: #e03e00;
+}
+
+/* Return to home button */
+.return-home {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.return-home button {
+    padding: 8px 16px;
+    background-color: #ff4500;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.return-home button:hover {
+    background-color: #e03e00;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 8px 0;
+    background-color: #1f1f1f;
+    color: #b5b5b5;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+}

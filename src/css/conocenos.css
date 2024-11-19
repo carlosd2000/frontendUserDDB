@@ -1,0 +1,165 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+/* Navbar Styles */
+.navbar, .buttons-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.navbar {
+    background-color: #1f1f1f;
+}
+
+.logo-container, .right-icons {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.logo-container {
+    justify-content: flex-start;
+}
+
+.logo {
+    height: 60px;
+    margin-left: 20px;
+}
+
+.search-container {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+.search-bar input[type="text"], .search-bar button, .login-button {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-bar input[type="text"] {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.search-bar button, .login-button {
+    background-color: #ff4500;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.search-bar button:hover, .login-button:hover {
+    background-color: #e03e00;
+}
+
+.right-icons {
+    justify-content: flex-end;
+}
+
+/* Section styling */
+section.quienes-somos {
+    margin: 70px auto -350px;
+    padding: 20px;
+    max-width: 1200px;
+    text-align: center;
+    background-color: #ff4500;
+}
+
+section.quienes-somos h1 {
+    font-size: 2.5em;
+    color: #ffffff;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+section.quienes-somos h1::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: #e03e00;
+    margin: 10px auto 0;
+}
+
+/* Container for text and image */
+.quienes-somos .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #292929;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+.quienes-somos .content .text {
+    width: 60%;
+    text-align: left;
+}
+
+.quienes-somos .content .text h2 {
+    font-size: 2em;
+    color: #e03e00;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.quienes-somos .content .text p, .quienes-somos .content .text ul, .quienes-somos .content .text ul li {
+    color: #ffffff;
+    font-size: 1.1em;
+}
+
+.quienes-somos .content .text ul {
+    margin-top: 10px;
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.quienes-somos .content .text ul li {
+    margin-bottom: 10px;
+}
+
+/* Image next to text */
+.quienes-somos .content .image {
+    width: 35%;
+}
+
+.quienes-somos .content .image img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .quienes-somos .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .quienes-somos .content .text, .quienes-somos .content .image {
+        width: 100%;
+    }
+
+    .quienes-somos .content .image {
+        margin-top: 20px;
+    }
+}
