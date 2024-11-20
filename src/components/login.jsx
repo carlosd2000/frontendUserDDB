@@ -7,6 +7,9 @@ import fondoNo2 from "../img/backgrounds/fondoNo2.jpg";
 import fondoNo3 from "../img/backgrounds/fondoNo3.jpg";
 import fondoNo4 from "../img/backgrounds/fondoNo4.jpg";
 import fondoNo5 from "../img/backgrounds/fondoNo5.jpg";
+import Registrarse from '../components/registrarse';
+
+//import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 function Login() {
   const navigate = useNavigate();
@@ -30,12 +33,17 @@ function Login() {
 
       document.documentElement.style.setProperty('--background-image', `url(${imagen})`);
     }
+    
 
     mostrarImagenAleatoria();
+
   }, []);
 
+
   return (
+    
     <>
+    
       <meta charSet="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Iniciar Sesión - Nexus Gaming Store</title>
@@ -61,7 +69,7 @@ function Login() {
         <div className="right-icons">
           <button
             className="login-button"
-            onClick={() => navigate('/registrarse')}
+            onClick={() => Registrarse}
             aria-label="Registrarse"
           >
             REGISTRARSE
@@ -132,6 +140,7 @@ function Login() {
         </div>
       </div>
     </>
+     
   );
 }
 

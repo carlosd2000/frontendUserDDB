@@ -1,29 +1,30 @@
 import '../css/productos.css';
+import logo from '../img/logo.jpg';
+import { useNavigate } from 'react-router-dom';
 import Msi from '../img/imagenes de productos/computador1.jpg';
-import '../img/imagenes de productos/acernitron50650.jpg';
-import '../img/imagenes de productos/Cascos Gaming con Micrófono Rotatorio.jpg';
-import '../img/imagenes de productos/Corsair Ironclaw RGB.jpg';
-import '../img/imagenes de productos/Corsair T3 Rush.png';
-import '../img/imagenes de productos/cyberpunk 2077.jpg';
-import '../img/imagenes de productos/Drift DR275 PRO.png';
-import '../img/imagenes de productos/elden ring.jpg';
-import '../img/imagenes de productos/GOW.jpg';
-import '../img/imagenes de productos/haloinfinite.jpg';
-import '../img/imagenes de productos/Logitech G203 LIGHTSYNC.png';
-import '../img/imagenes de productos/Nintendo swift.jpg';
-import '../img/imagenes de productos/NITROPC Pack Bronze.jpg';
-import '../img/imagenes de productos/producto No1.png';
-import '../img/imagenes de productos/PS 5.jpg';
-import '../img/imagenes de productos/Razer Deathadder V3.jpg';
-import '../img/imagenes de productos/Razer Enki X.jpg';
-import '../img/imagenes de productos/Tatybo Cascos Gaming.jpg';
-import '../img/imagenes de productos/the legends of zelda breath of the wild.jpg';
-import '../img/imagenes de productos/TR Playstation 50.jpg';
-import '../img/imagenes de productos/TR Steam 200.jpg';
-import '../img/imagenes de productos/TR XBOX 100.jpg';
-import '../img/imagenes de productos/Trust Gaming GXT 415 Zirox.jpg';
-import '../img/imagenes de productos/XBOX SERIE X.jpg';
+import acernitron from '../img/imagenes de productos/acernitron50650.jpg';
+import cascosGaming from '../img/imagenes de productos/Cascos Gaming con Micrófono Rotatorio.jpg';
+import corsairIronclaw from '../img/imagenes de productos/Corsair Ironclaw RGB.jpg';
+import corsairT3 from '../img/imagenes de productos/Corsair T3 Rush.png';
+import drift from '../img/imagenes de productos/Drift DR275 PRO.png';
+import gow from '../img/imagenes de productos/GOW.jpg';
+import haloinfinite from '../img/imagenes de productos/haloinfinite.jpg';
+import logitech from '../img/imagenes de productos/Logitech G203 LIGHTSYNC.png';
+import nintendoswift from '../img/imagenes de productos/Nintendo swift.jpg';
+import nitropc from '../img/imagenes de productos/NITROPC Pack Bronze.jpg';
+import ps5 from '../img/imagenes de productos/PS 5.jpg';
+import razerdeathadder from'../img/imagenes de productos/Razer Deathadder V3.jpg';
+import razerEnki from '../img/imagenes de productos/Razer Enki X.jpg';
+import tatybocascos from '../img/imagenes de productos/Tatybo Cascos Gaming.jpg';
+import legendsofzelda from '../img/imagenes de productos/the legends of zelda breath of the wild.jpg';
+import trplay50 from '../img/imagenes de productos/TR Playstation 50.jpg';
+import trsteam200 from '../img/imagenes de productos/TR Steam 200.jpg';
+import trxbox100 from '../img/imagenes de productos/TR XBOX 100.jpg';
+import trustgamingGXT from '../img/imagenes de productos/Trust Gaming GXT 415 Zirox.jpg';
+import xboxseriex from '../img/imagenes de productos/XBOX SERIE X.jpg';
 function Productos (){
+  const navigate = useNavigate();
+
     return(
         <>
         <meta charSet="UTF-8" />
@@ -34,13 +35,13 @@ function Productos (){
   <link rel="icon" href="../img/logo.jpg" />
   <nav className="navbar">
     <div className="logo-container">
-      <img
-        src="../img/logo.jpg"
-        alt="Nexus Gaming Store Logo"
-        className="logo"
-        onClick="window.location.href='../index.html'"
-      />
-    </div>
+          <img
+            src={logo}
+            alt="Nexus Gaming Store Logo"
+            className="logo"
+            onClick={() => navigate('/')}
+          />
+        </div>
     <div className="search-container" />
     <div className="search-bar">
       <input
@@ -140,7 +141,7 @@ function Productos (){
           </div>
           <div className="product-card computadores">
             <img
-              src="../img/imagenes de productos/acernitron50650.jpg"
+              src={acernitron}
               alt="Acer Nitro N50-650"
             />
             <h2>Acer Nitro N50-650</h2>
@@ -153,7 +154,7 @@ function Productos (){
           </div>
           <div className="product-card computadores">
             <img
-              src="../img/imagenes de productos/NITROPC Pack Bronze.jpg"
+              src={nitropc}
               alt="NITROPC Pack Bronze"
             />
             <h2>NITROPC Pack Bronze</h2>
@@ -167,7 +168,7 @@ function Productos (){
           {/* Sillas */}
           <div className="product-card sillas">
             <img
-              src="../img/imagenes de productos/Drift DR275 PRO.png"
+              src={drift}
               alt="Drift DR275 PRO"
             />
             <h2>Drift DR275 PRO</h2>
@@ -177,7 +178,7 @@ function Productos (){
           </div>
           <div className="product-card sillas">
             <img
-              src="../img/imagenes de productos/Corsair T3 Rush.PNG"
+              src={corsairT3}
               alt="Corsair T3 Rush"
             />
             <h2>Corsair T3 Rush</h2>
@@ -189,7 +190,7 @@ function Productos (){
           </div>
           <div className="product-card sillas">
             <img
-              src="../img/imagenes de productos/Razer Enki X.jpg"
+              src={razerEnki}
               alt="Razer Enki X"
             />
             <h2>Razer Enki X</h2>
@@ -202,7 +203,7 @@ function Productos (){
           {/* Diademas */}
           <div className="product-card diademas">
             <img
-              src="../img/imagenes de productos/Tatybo Cascos Gaming.jpg"
+              src={tatybocascos}
               alt="Tatybo Cascos Gaming"
             />
             <h2>Tatybo Cascos Gaming</h2>
@@ -215,7 +216,7 @@ function Productos (){
           </div>
           <div className="product-card diademas">
             <img
-              src="../img/imagenes de productos/Cascos Gaming con Micrófono Rotatorio.jpg"
+              src={cascosGaming}
               alt="Cascos Gaming con Micrófono Rotatorio"
             />
             <h2>Cascos Gaming con Micrófono Rotatorio</h2>
@@ -228,7 +229,7 @@ function Productos (){
           </div>
           <div className="product-card diademas">
             <img
-              src="../img/imagenes de productos/Trust Gaming GXT 415 Zirox.jpg"
+              src={trustgamingGXT}
               alt="Trust Gaming GXT 415 Zirox"
             />
             <h2>Trust Gaming GXT 415 Zirox</h2>
@@ -239,7 +240,7 @@ function Productos (){
           {/* Mouse */}
           <div className="product-card mouse">
             <img
-              src="../img/imagenes de productos/Logitech G203 LIGHTSYNC.Png"
+              src={logitech}
               alt="Logitech G203 LIGHTSYNC"
             />
             <h2>Logitech G203 LIGHTSYNC</h2>
@@ -252,7 +253,7 @@ function Productos (){
           </div>
           <div className="product-card mouse">
             <img
-              src="../img/imagenes de productos/Razer Deathadder V3.jpg"
+              src={razerdeathadder}
               alt="Razer Deathadder V3"
             />
             <h2>Razer Deathadder V3</h2>
@@ -265,7 +266,7 @@ function Productos (){
           </div>
           <div className="product-card mouse">
             <img
-              src="../img/imagenes de productos/Corsair Ironclaw RGB.jpg"
+              src={corsairIronclaw}
               alt="Corsair Ironclaw RGB"
             />
             <h2>Corsair Ironclaw RGB</h2>
@@ -278,7 +279,7 @@ function Productos (){
           {/* Consolas */}
           <div className="product-card consolas">
             <img
-              src="../img/imagenes de productos/PS 5.jpg"
+              src={ps5}
               alt="PlayStation 5 Pro"
             />
             <h2>PlayStation 5 Pro</h2>
@@ -288,7 +289,7 @@ function Productos (){
           </div>
           <div className="product-card consolas">
             <img
-              src="../img/imagenes de productos/Nintendo swift.jpg"
+              src={nintendoswift}
               alt="Nintendo Switch OLED"
             />
             <h2>Nintendo Switch OLED</h2>
@@ -300,7 +301,7 @@ function Productos (){
           </div>
           <div className="product-card consolas">
             <img
-              src="../img/imagenes de productos/XBOX SERIE X.jpg"
+              src={xboxseriex}
               alt="Xbox Series X"
             />
             <h2>Xbox Series X</h2>
@@ -311,7 +312,7 @@ function Productos (){
           {/* Tarjetas de Regalo */}
           <div className="product-card tarjetas">
             <img
-              src="../img/imagenes de productos/TR Playstation 50.jpg"
+              src={trplay50}
               alt="Tarjeta de Regalo $50"
             />
             <h2>Tarjeta de Regalo $50</h2>
@@ -321,7 +322,7 @@ function Productos (){
           </div>
           <div className="product-card tarjetas">
             <img
-              src="../img/imagenes de productos/TR XBOX 100.jpg"
+              src={trxbox100}
               alt="Tarjeta de Regalo $100"
             />
             <h2>Tarjeta de Regalo $100</h2>
@@ -331,7 +332,7 @@ function Productos (){
           </div>
           <div className="product-card tarjetas">
             <img
-              src="../img/imagenes de productos/TR Steam 200.jpg"
+              src={trsteam200}
               alt="Tarjeta de Regalo $200"
             />
             <h2>Tarjeta de Regalo $200</h2>
@@ -342,7 +343,7 @@ function Productos (){
           {/* Juegos */}
           <div className="product-card juegos">
             <img
-              src="../img/imagenes de productos/the legends of zelda breath of the wild.jpg"
+              src={legendsofzelda}
               alt="The Legend of Zelda: Tears of the Kingdom"
             />
             <h2>The Legend of Zelda: Tears of the Kingdom</h2>
@@ -355,7 +356,7 @@ function Productos (){
           </div>
           <div className="product-card juegos">
             <img
-              src="../img/imagenes de productos/GOW.jpg"
+              src={gow}
               alt="God of War Ragnarök"
             />
             <h2>God of War Ragnarök</h2>
@@ -367,7 +368,7 @@ function Productos (){
           </div>
           <div className="product-card juegos">
             <img
-              src="../img/imagenes de productos/haloinfinite.jpg"
+              src={haloinfinite}
               alt="Halo Infinite"
             />
             <h2>Halo Infinite</h2>
