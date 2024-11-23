@@ -1,12 +1,32 @@
-import React from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
+import { useNavigate } from 'react-router-dom';
+import carrucel1 from "../img/carrucel/carrucel1.jpg";
+import carrucel2 from"../img/carrucel/carrucel2.jpg";
+import carrucel3 from "../img/carrucel/carrucel3.jpg";
+import carrucel4 from "../img/carrucel/carrucel4.webp";
+import logo from "../img/logo.jpg";
+
 const Home = () => {
+
+  const navigate = useNavigate();
+
+  const [currentIndex, setCurrentIndex] = useState(0); 
+  const images = [carrucel1, carrucel2, carrucel3, carrucel4]; 
+  const handlePrev = () => { setCurrentIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1)); }; 
+  const handleNext = () => { setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));};
+
   return (
     <>
               <nav className="navbar">
                 <div className="logo-container">
-                  <img src="img/logo.jpg" alt="Nexus Gaming Store Logo" className="logo" />
+                  <img
+                    src={logo}
+                    alt="Nexus Gaming Store Logo"
+                    className="logo"
+                    onClick={() => navigate('/')}
+                  />
                 </div>
                 <div className="search-container">
                   <div className="search-bar">
@@ -45,28 +65,7 @@ const Home = () => {
                 </div>
               </div>
               {/* Inicio del Carrusel */}
-              <div className="carousel">
-                <div className="carousel-inner">
-                  <div className="carousel-item active">
-                    <img src="img/carrucel/carrucel1" alt="MSI MAG Infinite S3" />
-                  </div>
-                  <div className="carousel-item">
-                    <img src="img/carrucel/carrucel3.jpg" alt="Acer Nitro N50-650" />
-                  </div>
-                  <div className="carousel-item">
-                    <img src="img/carrucel/carrucel2" alt="NITROPC Pack Bronze" />
-                  </div>
-                  <div className="carousel-item">
-                    <img src="img/carrucel/carrucel4.webp" alt="Razer Enki X" />
-                  </div>
-                </div>
-                <div className="carousel-control-prev" onClick={() => console.log('Previous slide')}>
-                  ❮
-                </div>
-                <div className="carousel-control-next" onClick={() => console.log('Next slide')}>
-                  ❯
-                </div>
-              </div>
+              <div className="carousel"> <div className="carousel-inner"> {images.map((image, index) => ( <div key={index} className={`carousel-item ${index === currentIndex ? 'active' : ''}`}> <img src={image} alt={`Slide ${index + 1}`} /> </div> ))} </div> <div className="carousel-control-prev" onClick={handlePrev}> ❮ </div> <div className="carousel-control-next" onClick={handleNext}> ❯ </div> </div>
               {/* Fin del Carrusel */}
               <footer>
                 <div className="footer-container">
@@ -117,8 +116,10 @@ const Home = () => {
                   </div>
                 </div>
               </footer>
-            </>
+
+    </>
   );
 };
+
 
 export default Home;

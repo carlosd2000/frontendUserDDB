@@ -47,7 +47,7 @@ function Conocenos() {
         </div>
       </nav>
       <section className="quienes-somos">
-        <div className="container">
+        <div className="contenedor2">
           <h1>Quiénes Somos</h1>
           <div className="content">
             <div className="text">

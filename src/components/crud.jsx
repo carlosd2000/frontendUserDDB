@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Swal from "sweetalert2";
 import { getItems, addItem, updateItem, deleteItem } from "./service/itemService";
 
-function App() {
+function Crud() {
   const [items, setItems] = useState([]);
   const [form, setForm] = useState({ name: "", email: "", contraseña: "" });
   const [editingId, setEditingId] = useState(null);
@@ -113,7 +113,7 @@ function App() {
   );
 }
 
-export default App;
+export default Crud;
 
 
 

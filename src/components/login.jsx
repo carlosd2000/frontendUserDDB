@@ -69,7 +69,7 @@ function Login() {
         <div className="right-icons">
           <button
             className="login-button"
-            onClick={() => Registrarse}
+            onClick={() => navigate('/Registrarse')}
             aria-label="Registrarse"
           >
             REGISTRARSE

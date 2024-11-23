@@ -5,6 +5,7 @@ import Ayuda from '../components/ayuda';
 import Conocenos from '../components/conocenos';
 import Home from '../components/home'; // Crearemos este componente para la página de inicio
 import Registrarse from '../components/registrarse';
+
 const AppRoutes = () => {
   return (
     <Routes>

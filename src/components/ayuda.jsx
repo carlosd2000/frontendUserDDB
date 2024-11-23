@@ -12,7 +12,7 @@ function Ayuda() {
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Ayuda - Nexus Gaming Store</title>
       <link rel="icon" href={logo} />
-      <div className="container">
+      <div className="contenedor3">
         <h1>Centro de Ayuda</h1>
         <div className="faq-section">
           <h2>Preguntas Frecuentes</h2>

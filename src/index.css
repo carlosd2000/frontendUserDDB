@@ -82,11 +82,13 @@ body {
   /* Button Styles */
   .contenedor1 {
     background-color: rgba(255, 69, 0, 0.5);
-    padding: 30px  450px;
+    padding: 30px 500px;
     flex: 1;
     display: flex;
     align-items: center;
+    margin-top: 550px; /* Ajusta este valor según sea necesario */
   }
+  
   
   .botones {
     display: flex;
@@ -114,9 +116,12 @@ body {
     position: relative;
     width: 100%;
     max-width: 1200px; /* Ajusta el ancho máximo del carrusel */
-    margin: 105px auto; /* Centra el carrusel horizontalmente */
+    margin: 160px auto; /* Centra el carrusel horizontalmente */
     overflow: hidden; /* Oculta las imágenes fuera del área visible */
+    margin-top: 40px; /* Desplaza el carrusel 20px hacia abajo */
   }
+  
+  
   
   .carousel-inner {
     display: flex;
@@ -166,6 +171,7 @@ body {
     width: 100%;
     flex-wrap: wrap;
     padding-bottom: 20px; /* Espacio para la parte de derechos reservados */
+    
   }
   
   /* Ajustar las secciones */
